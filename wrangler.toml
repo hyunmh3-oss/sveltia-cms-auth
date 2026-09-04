@@ -1,3 +1,10 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# NURSphere Lab 관리자 로그인용 설정
+# GITHUB_CLIENT_SECRET 은 비밀값이므로 여기에 넣지 않고
+# `wrangler secret put GITHUB_CLIENT_SECRET` 으로 별도 등록한다.
+[vars]
+GITHUB_CLIENT_ID = "Ov23limmW0DITyCPrRQf"
+ALLOWED_DOMAINS = "nursphere.hyunmh3.workers.dev"
